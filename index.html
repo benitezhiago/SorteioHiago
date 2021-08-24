@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiago - Sorteios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- SCRIPT -->
+
+  <!-- BODY -->
+  <body>
+    <div class="geral">
+      <!-- IMAGEM ESQUERDA -->
+      <div class="esquerda">
+        <img src="img/premios.png" alt="interface inicial show de premios" />
+      </div>
+      <!-- PARTE DA DIREITA -->
+      <div class="direita">
+        <div class="logo">
+          <img src="img/logo.svg" alt="logo show de premios" />
+        </div>
+        <!-- FORMULARIO -->
+        <form id="form" class="cadastrogeral" onsubmit="enviarDados(event)">
+          <div class="cadastro">
+            <h2>Nome</h2>
+            <input
+              name="roomId"
+              type="name"
+              id="nameum"
+              placeholder="Digite seu nome completo"
+              required
+            />
+          </div>
+          <div class="cadastro2">
+            <h2>E-mail</h2>
+            <input
+              name="roomId"
+              type="email"
+              id="email"
+              placeholder="Digite seu endereço de e-mail"
+              required
+            />
+          </div>
+          <div class="cadastro3">
+            <h2>Telefone</h2>
+            <input
+              name="roomId"
+              type="tel"
+              id="tell"
+              ]
+              pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}"
+              placeholder="Digite seu telefone "
+              required
+            />
+          </div>
+          <div class="cadastro4">
+            <h2>Cidade</h2>
+            <select
+              name="select"
+              id="city"
+              placeholder="Digite sua cidade"
+              required
+            >
+              <option disabled selected value="" class="options">
+                Selecione sua cidade
+              </option>
+              <option class="options">Porto Velho</option>
+              <option class="options">Ji-Paraná</option>
+              <option class="options">Ariquemes</option>
+              <option class="options">Vilhena</option>
+              <option class="options">Cacoal</option>
+            </select>
+          </div>
+          <div class="concordar">
+            <input type="checkbox" name="regras" id="regrasum" required />
+            <h1>Concordo com as regras do sorteio</h1>
+          </div>
+          <div class="concordar2">
+            <input type="checkbox" name="regras" id="regrasdois" required />
+            <h1>Concordo com os termos de uso e privacidade</h1>
+          </div>
+
+          <!-- BUTTONS -->
+
+          <button class="button1" type="submit">
+            <img src="img/entrar.svg" alt="Quero participar" />
+            Quero Participar
+          </button>
+        </form>
+        <div class="button2">
+          <a href="sortear.html">
+            <button>
+              <img src="img/entrar.svg" alt="página de ADM" />
+              Acessar página de ADM
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- MODAL -->
+      <div class="modalalert" id="modal" aria-required="">
+        <div class="modal">
+          <div class="imgmodal">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <div class="conteudomodal">
+            <h3>Você está participando</h3>
+            <h4>cadastro no sorteio realizado com sucesso!</h4>
+            <div class="buttonn">
+              <a href="/">
+                <button2 class="button3">retornar</button2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="formularioController.js"></script>
+  </body>
+</html>
